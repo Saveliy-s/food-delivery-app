@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(./Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+:root {
+    /* Font */
+    --main-font: 'Nunito', sans-serif; /* шрифт для всего текста на странице */
+
+    /* Colors */
+    --color-orange: #FF7A2F; /* для кнопок, иконок, логотипа и всех ключевых действий */
+    --color-indigo: #3D3D80; /* для плашек, футера или выделенных предложений */
+    --color-white: #FDF9F5;
+    --color-text: #2C2C2C;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--color-text);
+    background-color: var(--color-white);
+}
+
+.header {
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+    min-height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header-logo a {
+    color: var(--color-orange);
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-logo a:hover {
+    color: var(--color-orange);
+    font-weight: 800;
+}
+
+.header-nav,
+.nav-ul,
+.header-nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    gap: 4rem;
+}
+
+.nav-ul,
+.header-nav-buttons {
+    gap: 2rem;
+}
+
+.nav-ul {
+    list-style: none;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.nav-ul a:hover {
+    color: var(--color-orange);
+}
+
+.button-login,
+.button-cart {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-login {
+    color: var(--color-white);
+    background-color: var(--color-text);
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 3rem;
+    font-weight: 700;
+    font-family: var(--main-font);
+}
+
+.button-login:hover {
+    background-color: var(--color-orange);
+}
+
+.button-cart {
+    border: none;
+    background-color: transparent;
+}
+
+.button-cart svg {
+    color: var(--color-text);
+    transition: 0.2s;
+}
+
+.button-cart svg:hover {
+    color: var(--color-orange);
+}
+
+.main {
+    min-height: 100vh;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-indigo);
+    min-height: 15rem;
+    color: var(--color-white);
+    padding: 4rem;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contacts-ul-item {
+    list-style: none;
+}
+
+.contacts-ul-item a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: 0.2s;
+}
+
+.contacts-ul-item a:hover {
+    text-decoration: none;
+    color: var(--color-orange);
+}
+
+.contacts-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-contacts--title {
+    color: #FF7A2F;
+    font-size: 1.5rem;
+}
+
+.social-media-ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-media-item {
+    list-style: none;
+}
+
+.social-media-item a svg {
+    color: var(--color-white);
+    transition: 0.2s;
+}
+
+.social-media-item a svg:hover {
+    color: var(--color-orange);
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    color: #999999;
+    gap: 0.1rem;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 400px) {
+    .nav-ul {
+        display: none;
+    }
+}
+
+@media(max-width: 576px) {
+    .nav-ul {
+        display: none;
+    }
+}
