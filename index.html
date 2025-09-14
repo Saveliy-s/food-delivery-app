@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yummly | Быстро и вкусно</title>
+    <title>Yumly | Быстро и вкусно</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="header-logo"><a href="#">Yummly</a></h1>
+        <h1 class="header-logo"><a href="#">Yumly</a></h1>
         <nav class="header-nav">
             <ul class="nav-ul">
                 <li class="nav-item"><a href="#">О нас</a></li>
@@ -25,10 +25,275 @@
     </header>
 
     <main class="main">
-        <section class="menu">
-            <h2 class="menu-title">Наше меню</h2>
-            <div class="menu-cuntainer">Тут будут карточки блюд</div>
+        <section class="menu-choose">
+            <div class="menu pizza"><a href="#">Пицца</a></div>
+            <div class="menu burgers"><a href="#">Бургеры</a></div>
+            <div class="menu mexico"><a href="#">Мексиканская</a></div>
+            <div class="menu azia"><a href="#">Азиатская</a></div>
+            <div class="menu desserts"><a href="#">Десерты</a></div>
+            <div class="menu drinks"><a href="#">Напитки</a></div>
         </section>
+
+        <section class="menu-container-section">
+            <div class="menu-container pizza-container" >
+                <h2 class="menu-container-title">ХОЧУ ЕЁ ВСЮ</h2>
+            <article class="menu-item">
+                <img class="menu-item-image" src="./accets/images/pizza/pizza-cheeseburger.png" alt="Pizza Cheeseburger">
+                <h3 class="menu-item-title">ЧИТЕРСКИЙ КОД</h3>
+                <p class="menu-item-description">Взлом системы питания. Говяжий фарш, соус "1000 островов", чеддер и маринованные огурчики на тесте для пиццы.</p>
+                <div class="price-cart-button">
+                    <span class="price">600₽</span>
+                    <button class="to-cart-button">В корзину</button>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <img class="menu-item-image" src="./accets/images/pizza/pizza-margarito-riccola.png" alt="Pizza Cheeseburger">
+                <h3 class="menu-item-title">МАММА МИЯ!</h3>
+                <p class="menu-item-description">От этой итальянки теряешь голову. Тончайшая мортаделла, нежнейшая страчателла и фисташки на томатном соусе.</p>
+                <div class="price-cart-button">
+                    <span class="price">600₽</span>
+                    <button class="to-cart-button">В корзину</button>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <img class="menu-item-image" src="./accets/images/pizza/piza-mashrooms.png" alt="Pizza Cheeseburger">
+                <h3 class="menu-item-title">ЭТО ЭЛИТНО</h3>
+                <p class="menu-item-description">Когда решил себя побаловать. Белый соус, моцарелла, шампиньоны, трюфельное масло и свежая руккола.</p>
+                <div class="price-cart-button">
+                    <span class="price">600₽</span>
+                    <button class="to-cart-button">В корзину</button>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <img class="menu-item-image" src="./accets/images/pizza/pizza-gorgonzola.png" alt="Pizza Cheeseburger">
+                <h3 class="menu-item-title">СЛОЖНЫЙ ПРИКОЛ</h3>
+                <p class="menu-item-description">Поймут не все, оценят избранные. Сладкая груша, дерзкий сыр горгонзола, грецкие орехи и капелька мёда.</p>
+                <div class="price-cart-button">
+                    <span class="price">600₽</span>
+                    <button class="to-cart-button">В корзину</button>
+                </div>
+            </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/pizza/pizza-porkBBQ.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">YUMLY BBQ</h3>
+                    <p class="menu-item-description">Когда бургер и пицца создали семью. Наша фирменная рваная свинина, красный лук и моцарелла на соусе BBQ.</p>
+                    <div class="price-cart-button">
+                        <span class="price">600₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-container burgers-container">
+                <h2 class="menu-container-title">МЕЖДУ БУЛОК</h2>
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/burgers/burger-cheese-boom.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">СЫРНАЯ ИМБА</h3>
+                    <p class="menu-item-description">Это просто чит-код. Мощная котлета, внутри которой прячутся три моцарелла-стика, а сверху — чеддер, сырный соус и карамелизированный лук. Нерфить не будем.</p>
+                    <div class="price-cart-button">
+                        <span class="price">790₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/burgers/burger-cryspy-chiken.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ЗАХРУСТИШЬ</h3>
+                    <p class="menu-item-description">Выкручивай громкость. Огромный кусок куриного филе в хрустящей панировке, свежий айсберг, томаты и соус ранч. ASMR, который можно съесть.</p>
+                    <div class="price-cart-button">
+                        <span class="price">690₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/burgers/burger-rvaniy-baron.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ПОРВИ ЕГО</h3>
+                    <p class="menu-item-description">Не сдерживай себя. Мы часами томили эту нежнейшую рваную свинину BBQ, чтобы ты расправился с ней, салатом коул-слоу, острым халапеньо и луковыми кольцами за минуты.</p>
+                    <div class="price-cart-button">
+                        <span class="price">890₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/burgers/burger-yumly-smash.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">YUMLY КРАШ</h3>
+                    <p class="menu-item-description">Тот самый краш, который не разочарует. Две сочные смэш-котлеты, двойной чеддер, хрустящий лук и огурчики под нашим секретным соусом Yumly. Это база.</p>
+                    <div class="price-cart-button">
+                        <span class="price">990₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/burgers/vegan-rock-n-roll.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ЗЕЛЕНЫЙ ВАЙБ</h3>
+                    <p class="menu-item-description">Поймай дзен. Растительная котлета, нежный веганский сыр, гуакамоле и сальса из манго на зерновой булочке. Для тех, кто на чилле.</p>
+                    <div class="price-cart-button">
+                        <span class="price">690₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-container mexico-container">
+                <h2 class="menu-container-title">МАМИН АМИГО</h2>
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/mexico/mexico-burito-champion.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">РАЗМЕР РЕШАЕТ</h3>
+                    <p class="menu-item-description">Гигантский буррито, в котором есть всё: рис, фасоль, мясо на выбор, гуакамоле, сметана и сыр. Закроет все твои гештальты. Ну, почти все.</p>
+                    <div class="price-cart-button">
+                        <span class="price">590₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/mexico/mexico-cheese-kesadilia.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ГОРЯЧАЯ ТЯНУЧКА</h3>
+                    <p class="menu-item-description">Осторожно, вызывает зависимость. Хрустящая тортилья, тонны тянущегося сыра и сочная курица под соусом чипотле.</p>
+                    <div class="price-cart-button">
+                        <span class="price">690₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/mexico/mexico-chili-con-karne.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ПРОЖГИСЬ!</h3>
+                    <p class="menu-item-description">Густой, мясной чили с говядиной и фасолью. Если не заплачешь от остроты, заплачешь от счастья. Подаётся со сметаной.</p>
+                    <div class="price-cart-button">
+                        <span class="price">590₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/mexico/mexico-nachos.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ЛУТ ДЛЯ ПАТИ</h3>
+                    <p class="menu-item-description">Гора начос для твоего сквада. Залита расплавленным сыром, говяжьим чили, сметаной и халапеньо. Главное правило — никаких правил.</p>
+                    <div class="price-cart-button">
+                        <span class="price">690₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/mexico/mexico-taco-trio.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ТВОЙ ПЕРВЫЙ РАЗ?</h3>
+                    <p class="menu-item-description">Не знаешь, с чего начать? Держи сразу три тако: с рваной говядиной, острой курицей и дерзкой фасолью. Потом спасибо скажешь.</p>
+                    <div class="price-cart-button">
+                        <span class="price">690₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-container azia-container">
+                <h2 class="menu-container-title">АЗИАТСКИЙ ВАЙБ</h2>
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/azia/azia-bao.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">МЯГКИЕ БУЛОЧКИ</h3>
+                    <p class="menu-item-description">Нежные, как первое свидание. Две воздушные булочки бао с рваной уткой, соусом хойсин и свежим огурцом. Тают во рту.</p>
+                    <div class="price-cart-button">
+                        <span class="price">690₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/azia/azia-chiken.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">КОРЕЙСКИЙ ФЛЕКС</h3>
+                    <p class="menu-item-description">Хрустящая курица в огненно-сладком соусе Gochujang с кунжутом. Не просто ужин, а контент для твоих сторис.</p>
+                    <div class="price-cart-button">
+                        <span class="price">690₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/azia/azia-pokeboul.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ПРОСТО ПОКЕ</h3>
+                    <p class="menu-item-description">Без лишних слов. Рис, свежий тунец, авокадо, эдамаме и чука под ореховым соусом. Красиво, вкусно, инстаграмно.</p>
+                    <div class="price-cart-button">
+                        <span class="price">890₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/azia/azia-tom-yumly.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ЭТО МУД</h3>
+                    <p class="menu-item-description">Легендарный Том Ям. Острый, кислый, сливочный, с креветками и грибами. Когда хочешь почувствовать всё и сразу.</p>
+                    <div class="price-cart-button">
+                        <span class="price">690₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/azia/azia-wok.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ТВОЙ КАСТОМ</h3>
+                    <p class="menu-item-description">Собери свой WOK. Выбери лапшу (удон/стеклянная), основу (курица/креветки/тофу) и соус (терияки/кисло-сладкий). Ты здесь главный.</p>
+                    <div class="price-cart-button">
+                        <span class="price">590₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-container desserts-container">
+                <h2 class="menu-container-title">ЧИСТЫЙ КАЙФ</h2>
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/desserts/dessert-cheesecake.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">СЛАДКИЙ ЗАЛИПОН</h3>
+                    <p class="menu-item-description">Залипаешь, пока не увидишь дно. Нежный чизкейк, щедро политый солёной карамелью и засыпанный хрустящим попкорном.</p>
+                    <div class="price-cart-button">
+                        <span class="price">490₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/desserts/dessert-fondan.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">YUMLY БЕСПРЕДЕЛ</h3>
+                    <p class="menu-item-description">Никаких правил, чистый хаос. Тёплый брауни с жидким шоколадом, в котором тонут мармеладные мишки и шарик мороженого.</p>
+                    <div class="price-cart-button">
+                        <span class="price">490₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-container drinks-container">
+                <h2 class="menu-container-title">ЖИДКИЙ ФЛЕКС</h2>
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/drinks/lomonades.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">ХОЛОДНЫЙ ЧИЛЛ</h3>
+                    <p class="menu-item-description">Не просто газировка, а твой личный вайб. Наши домашние миксы, которые бьют точно в цель. Выбирай: тропический Манго-Маракуйя, дерзкий Грейпфрут-Розмарин или ягодный Мохито (алко нет, но это не точно).</p>
+                    <div class="price-cart-button">
+                        <span class="price">290₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="menu-item">
+                    <img class="menu-item-image" src="./accets/images/drinks/milkshakes.png" alt="Pizza Cheeseburger">
+                    <h3 class="menu-item-title">СЛАДКАЯ КОМА</h3>
+                    <p class="menu-item-description">Эти шейки созданы для твоих сторис. Густые, холодные, с горой топпингов. Выбирай: Шоколадный Космос с кусками брауни, Клубничный Дрим со взбитыми сливками или Солёная Карамель с хрустящим попкорном. Лайк гарантирован.</p>
+                    <div class="price-cart-button">
+                        <span class="price">290₽</span>
+                        <button class="to-cart-button">В корзину</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -39,7 +304,7 @@
                     <a href="tel:+79001112233">8 900 111 22 33</a>
                 </li>
                 <li class="contacts-ul-item">
-                    <a href="mailto:feedback@yummly.com">feedback@yummly.com</a>
+                    <a href="mailto:feedback@yummly.com">feedback@yumly.com</a>
                 </li>
             </ul>
         </div>
@@ -58,7 +323,7 @@
         </div>
         <div class="footer-copyright">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#999999"><g fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M14.6 9a4 4 0 1 0 0 6"/></g></svg>
-            <p>Yummly 2025</p>
+            <p>Yumly 2025</p>
         </div>
     </footer>
 </body>

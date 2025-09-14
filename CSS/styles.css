@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Nunito';
-    src: url(./Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+    src: url(/accets/Fonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
 
 :root {
@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,10 +29,6 @@ body {
 }
 
 .header {
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-
     min-height: 5rem;
 
     display: flex;
@@ -130,9 +127,9 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-indigo);
-    min-height: 15rem;
+    min-height: 5rem;
     color: var(--color-white);
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .footer-contacts {
@@ -194,6 +191,111 @@ body {
     gap: 0.1rem;
 }
 
+.menu-choose {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    font-weight: 700;
+
+    background-color: var(--color-white);
+}
+
+.menu a {
+    color: var(--color-text);
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--color-orange);
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+    gap: 4rem;
+    padding: 4rem;
+    width: 100%;
+    
+    background: linear-gradient(90deg, var(--color-orange), var(--color-indigo));
+}
+
+.menu-container-title {
+    color: var(--color-white);
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.menu-item-image {
+    width: 210px;
+    height: 210px;
+
+    border-radius: 1rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 350px;
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    gap: 1rem;
+
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+    background-color: var(--color-white);
+}
+
+.menu-item-description {
+    min-height: 10rem;
+}
+
+.price-cart-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: 800;
+    color: var(--color-text);
+}
+
+.to-cart-button {
+    font-weight: 800;
+    font-family: var(--main-font);
+    color: var(--color-white);
+
+    background-color: var(--color-indigo);
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.to-cart-button:hover {
+    background-color: var(--color-orange);
+}
 
 
 
@@ -201,9 +303,17 @@ body {
 
 
 
-@media(max-width: 400px) {
-    .nav-ul {
-        display: none;
+
+
+@media(max-width: 1224px) {
+    .menu-container  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 836px) {
+    .menu-container  {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -211,4 +321,56 @@ body {
     .nav-ul {
         display: none;
     }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-contacts {
+        align-items: center;
+    }
+
+    .contacts-ul-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-choose {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .menu-container  {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
+
+@media(max-width: 400px) {
+    .nav-ul {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-contacts {
+        align-items: center;
+    }
+
+    .contacts-ul-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-container  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
