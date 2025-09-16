@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Nunito", sans-serif;;
+    src: url(/accets/Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+:root {
+    /* Font */
+    --main-font: 'Nunito', sans-serif; /* шрифт для всего текста на странице */
+
+    /* Colors */
+    --color-orange: #FF7A2F; /* для кнопок, иконок, логотипа и всех ключевых действий */
+    --color-indigo: #3D3D80; /* для плашек, футера или выделенных предложений */
+    --color-white: #FDF9F5;
+    --color-text: #2C2C2C;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--color-text);
+    background-color: var(--color-white);
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background: linear-gradient(90deg, var(--color-orange), var(--color-indigo));
+}
